@@ -53,7 +53,7 @@ def check_output(output, cmd, device):
             index = next((i for i, line in enumerate(output_lines) if "% Invalid input" in line), -1)
             error_line = f"Invalid command: {output_lines[index-2].split('#', 1)[1]}\n"
             print(colored(error_line, 'red'))
-            with open("config_error_log.txt", 'a') as f:
+            with open("config_error_log.log", 'a') as f:
                 now = datetime.now()
                 f.writelines(f"{str(now)} {output_lines[index-2].split('#', 1)[0]} {error_line}\n")
             return False

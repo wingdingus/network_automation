@@ -6,8 +6,8 @@ execute show and run commands on network devices and save output to file, useful
 
 ### Required files:
 
-- creds.txt - device credentials.
-- devices.txt - device ip addresses.
+- creds.txt - device credentials e.g. admin,password
+- devices.txt - device ip addresses, one per line.
 - cmd.json - json file containing show and config commands, example below:
 
 ```
