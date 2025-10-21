@@ -6,14 +6,6 @@
   ],
   "config": [
     "ntp server 192.168.127.2",
-    "ip route 0.0.0.0 0.0.0.0 192.168.127.2",
-    "username test password 0 test",
-    "ip access-list extended TEST1",
-    "permit ip any host 1.1.1.1",
-    "permit ip any host 1.1.1.2",
-    "permit ip any host 1.1.1.3",
-    "permit ip any host 1.1.1.4",
-    "permit ip any host 1.1.1.5",
-    "ip route 10.1.1.0 255.255.255.0 192.168.127.2"
+    "ip route 0.0.0.0 0.0.0.0 192.168.127.2"
   ]
 }
