@@ -2,25 +2,19 @@
 
 ## main.py
 
-execute show and run commands on network devices and save output to file, useful for configuration backups.
+Execute show and run commands on network devices and save output to file.
 
 ### Required files:
 
 - creds.txt - device credentials e.g. admin,password
 - devices.txt - device ip addresses, one per line.
-- cmd.json - json file containing show and config commands, example below:
+- cmd.json - json file containing show and config commands.
 
-```
-{
-"show": [
-"show ip int brief | exclude unassigned",
-"show version | include Version",
-"show version | include uptime",
-"show running-config"
-],
-"config": [
-"ntp server 192.168.127.2",
-"ip route 0.0.0.0 0.0.0.0 192.168.127.2"
-]
-}
-```
+## cfg_backup.py
+
+Configuration backup script with changes since yesterday output to file.
+
+### Required files:
+
+- creds.txt - device credentials e.g. admin,password
+- devices.txt - device ip addresses, one per line.
